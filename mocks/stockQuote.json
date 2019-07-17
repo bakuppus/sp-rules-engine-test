@@ -1,0 +1,21 @@
+{
+  "conditions": {
+    "all": [{
+      "fact": "stock-quote",
+      "operator": "equal",
+      "value": "AMZN",
+      "path": ".symbol"
+    }, {
+      "fact": "stock-quote",
+      "operator": "equal",
+      "value": 2000,
+      "path": ".high"
+    }]
+  },
+  "event": {
+    "type": "amazon-high-value",
+    "params": {
+      "message": "Amazon High Value"
+    }
+  }
+}

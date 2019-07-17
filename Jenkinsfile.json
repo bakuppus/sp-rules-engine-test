@@ -1,0 +1,16 @@
+{
+  "app": {
+    "name": "sp-ruleengine",
+    "namespace": "dev",
+    "deployment_url": "rulesengine.k8s-test.stockpiletest.com",
+    "test": true
+  },
+  "container_repo": {
+    "repo": "stockpile/sp-rulesengine",
+    "jenkins_creds_id": "dockerhub"
+  },
+  "pipeline": {
+      "enabled": true,
+      "debug": false
+  }
+}

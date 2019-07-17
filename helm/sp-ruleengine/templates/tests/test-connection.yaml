@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "sp-ruleengine.fullname" . }}-test-connection"
+  labels:
+    app.kubernetes.io/name: {{ include "sp-ruleengine.name" . }}
+    helm.sh/chart: {{ include "sp-ruleengine.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+  annotations:
+    "helm.sh/hook": test-success
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args:  ['{{ include "sp-ruleengine.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
