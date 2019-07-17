@@ -1,0 +1,18 @@
+{
+  "app": {
+    "name": "sp-ruleengine",
+    "namespace": "dev",
+    "deployment_url": "rulesengine.k8s-test.stockpiletest.com",
+    "replicas": "1",
+    "cpu": "10m",
+    "memory": "128Mi",
+    "test": true
+  },
+  "pipeline": {
+      "enabled": true,
+      "debug": false,
+      "library": {
+        "branch": "master"
+      }
+  }
+}
