@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "sp-ruleengine",
+    "name": "https://stockpile.jfrog.io/stockpile/baladockerreg1/baladockerreg1:latest",
     "namespace": "dev",
     "deployment_url": "rulesengine.k8s-test.stockpiletest.com",
     "replicas": "1",
