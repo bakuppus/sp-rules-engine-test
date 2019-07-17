@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: stockpile-baladockerreg1.jfrog.io/baladockerreg1
+  repository: https://stockpile-baladockerreg1.jfrog.io/baladockerreg1
   tag: latest
   pullPolicy: IfNotPresent
 
