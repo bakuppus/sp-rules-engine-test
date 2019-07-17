@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: stockpile/sp-rulesengine
-  tag: stable
+  repository: stockpile.jfrog.io/stockpile/baladockerreg1/baladockerreg1
+  tag: latest
   pullPolicy: IfNotPresent
 
 nameOverride: ""
