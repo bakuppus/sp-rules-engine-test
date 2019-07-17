@@ -8,6 +8,13 @@
     "memory": "128Mi",
     "test": true
   },
+  
+    "container_repo": {
+    "repo": "https://stockpile.jfrog.io/stockpile/baladockerreg1/baladockerreg1:latest",
+    "jenkins_creds_id": "jfrog-admin"
+  },
+  
+  
   "pipeline": {
       "enabled": true,
       "debug": false,
