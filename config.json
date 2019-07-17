@@ -10,7 +10,7 @@
   },
   
     "container_repo": {
-    "repo": "https://stockpile.jfrog.io/stockpile/baladockerreg1/baladockerreg1:latest",
+    "repo": "stockpile-baladockerreg1.jfrog.io/baladockerreg1:latest",
     "jenkins_creds_id": "jfrog-admin"
   },
   
